@@ -1,26 +1,33 @@
-body{
-    max-width: 1140px;
-    width: 80%;
-    margin: 0 auto;
-    #main-tag{
-        h5{
-            margin: 9px 0px;
-            font-weight: 500;
-            font-size: 16px;
-        }
-      
-        .img1{
-            width: 100%;
-            height: 521px;
-        }
-        .img2{
-            width: 200px;
-            height: 112px;
-        }
-        table, th, td {
-            border: 1px solid black;
-            border-collapse: collapse;
-          }
-        
+body {
+  max-width: 1140px;
+  width: 80%;
+  margin: 0 auto;
+  #main-tag {
+    h5 {
+      margin: 9px 0px;
+      font-weight: 500;
+      font-size: 16px;
     }
+
+    .img1 {
+      width: 100%;
+      height: 521px;
+    }
+    .img2 {
+      width: 200px;
+      height: 112px;
+    }
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    table{
+        width: 100%;
+    }
+    .main-ul{
+        list-style-type: disc;
+    }
+  }
 }
