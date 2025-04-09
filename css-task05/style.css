@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  color: #000000ce;
+}
+header {
+  background-color: rgb(109, 214, 10);
+  height: 50px;
+  width: 100%;
+}
+#portfolio {
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+main#portfolio > h1 {
+  font-size: 60px;
+  font-weight: 800;
+}
+h3 {
+  font-size: 30px;
+  font-weight: 800;
+}
+div.navigation > h4 {
+  font-size: 21px;
+  font-weight: 700;
+}
+div.navigation > ul > li > a {
+  color: #3dd60e;
+}
+div.blog > h4 {
+  font-size: 21px;
+  font-weight: 700;
+}
+div.feature > h5 {
+  font-size: 18px;
+  font-weight: 700;
+}
+div.feature > a {
+  color: #3dd60e;
+}
+div.guide > h5 {
+  font-size: 18px;
+  font-weight: 700;
+}
+div.guide > a {
+  color: #3dd60e;
+}
+div.architecture > h5 {
+  font-size: 18px;
+  font-weight: 700;
+}
+div.architecture > a {
+  color: #3dd60e;
+}
+footer{
+    width: 100%;
+    background-color: #1ca3b4;
+    height: 100px;
+    margin-top: 40px;
+}
