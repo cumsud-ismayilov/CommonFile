@@ -1,0 +1,40 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+main {
+  max-width: 1320px;
+  margin-inline: auto;
+  width: 70%;
+}
+main>.bio > h1 {
+  font-weight: 900;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #f0fff8;
+}
+td {
+  border: 1px solid #80ced6;
+  padding: 10px;
+}
+
+p {
+  box-sizing: border-box;
+  background-color: #f0fff8;
+  padding: 30px;
+  border: 1px solid #80ced6;
+  border-radius: 10px;
+}
+h3 {
+  font-weight: 900;
+}
+ul{
+    list-style-type: square;
+    box-sizing: border-box;
+    background-color: #f0fff8;
+    padding: 30px;
+    border: 1px solid #80ced6;
+    border-radius: 10px;
+}
