@@ -46,13 +46,12 @@ main {
         }
       }
     }
-  .page-card{
-    display: flex
-;
-    width: 80%;
-    flex-wrap: wrap;
-    justify-content: center;
-    .product-card {
+    .page-card {
+      display: flex;
+      width: 80%;
+      flex-wrap: wrap;
+      justify-content: center;
+      .product-card {
         width: 250px;
         margin: 0 18px;
         .img-box {
@@ -84,6 +83,6 @@ main {
           }
         }
       }
-  }
+    }
   }
 }
