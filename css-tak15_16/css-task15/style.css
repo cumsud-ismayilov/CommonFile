@@ -1,0 +1,127 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px;
+}
+
+.box {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  border-radius: 20px;
+  background-color: rgb(150, 255, 13);
+  overflow: hidden;
+  transition: all 0.7s ease-in;
+  &:hover {
+    background-color: #000;
+    .img1 {
+      transform: translateY(-305px);
+      scale: 0.6;
+    }
+    .img2 {
+      transform: translateY(-280px);
+      scale: 1.1;
+    }
+  }
+}
+
+.img1 {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
+  vertical-align: middle;
+  scale: 1;
+  transform: translateY(0px);
+  transition: all 0.7s ease;
+}
+.img2 {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
+  scale: 1;
+  transform: translateY(0px);
+  transition: all 0.7s ease;
+}
+
+.square1 {
+  position: absolute;
+  top: 5px;
+  left: 11px;
+  width: 25px;
+  height: 25px;
+  background-color: red;
+  animation-name: sq-anim1;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+ 
+  
+}
+.square2 {
+  position: absolute;
+  top: 5px;
+  left: 11px;
+  width: 25px;
+  height: 25px;
+  background-color: rgb(150, 255, 13);
+  animation-name: sq-anim2;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes sq-anim1 {
+  0% {
+    margin-top: 0px;
+  }
+  25% {
+    margin-left: 0px;
+    margin-top: 263px;
+  }
+  50% {
+    margin-top: 263px;
+    margin-left: 155px;
+  }
+  75% {
+    margin-top: 0px;
+    margin-left: 155px;
+  }
+  100% {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+}
+@keyframes sq-anim2 {
+  0% {
+    margin-top: 0px;
+  }
+  25% {
+    margin-left: 152px;
+    margin-top: 0px;
+    border-radius: 10px;
+
+  }
+  50% {
+    margin-top: 263px;
+    margin-left: 152px;
+    border-radius: 15px;
+  }
+  75% {
+    margin-top: 263px;
+    margin-left:0px;
+    border-radius: 20px;
+  }
+  100% {
+    margin-top: 0px;
+    margin-left: 0px;
+    border-radius: 0;
+  }
+}
