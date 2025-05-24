@@ -85,3 +85,14 @@ console.log(String(Hasil).charAt(5))
 // let Str =+prompt("4 rəqəmli ədəd daxil edin")
 // console.log(Str.substring(0,1) + Str.substring(1,2))
 
+// 19.Qiyməti mətn halına salan proqram tərtib edin. İstifadəçidən «530.90» formatında qiymət daxil etməyi xahiş edən və qiyməti «530 manat 90 qəpik» formatında konsola çıxaran proqram tərtib edin.
+
+
+// let cost = prompt("qiymmeti daxil edin")
+// console.log(cost.replace("." , " manat "))
+
+// 21.İstifadəçidən soyad, ad və ata adını istəyən, soyadı və baş hərfləri konsola çıxaran proqram tərtib edin. Məsələn, «İvanov Pyotr Sergeevich» — «İvanov P.S.».
+  
+
+let Username = prompt("Istifadəçi adını daxil edin")
+console.log(Username)
