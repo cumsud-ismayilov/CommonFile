@@ -83,7 +83,7 @@ console.log(String(Hasil).charAt(5))
 
 // 17.Rəqəmlərin cəmini göstərən proqram yazın. İstifadəçidən dörd rəqəmli ədəd daxil etməsini xahiş edən və sonra daxil edilmiş ədədlərin rəqəmlərinin cəmini konsola çıxaran proqram yazın.
 // let Str =+prompt("4 rəqəmli ədəd daxil edin")
-// console.log(Str.substring(0,1) + Str.substring(1,2))
+
 
 // 19.Qiyməti mətn halına salan proqram tərtib edin. İstifadəçidən «530.90» formatında qiymət daxil etməyi xahiş edən və qiyməti «530 manat 90 qəpik» formatında konsola çıxaran proqram tərtib edin.
 
