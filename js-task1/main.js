@@ -171,10 +171,223 @@ console.log(String(Hasil).charAt(5));
 // 6,4,4,8,11,10
 
 
+// 27. if...else operatoru ilə yazılmış kodu switch operatoruna dəyişdirməklə kodu yenidən yazın.
+
+
+// let id = +prompt("enter product id:");
+// switch (id) {
+//     case 1:
+//         alert("Available 10 pcs.");
+//         break;
+//     case 2:
+//         alert("Available 256 pcs.");
+//         break;
+//     case 3:
+//         alert("Available 53 pcs.");
+//         break;
+//     case 4:
+//         alert("There are 3 available.");
+//         break;
+
+//     default:
+//         break;
+// }
+
+// 28.İstifadəçidən onun cinsini (M və ya F hərfləri şəklində) sorğulayan və gender dəyişəninə male yaxud female sözlərindən birini yazdıran proqramı yazın
+
+// let Gender = prompt("Cinsiniz nədir ?")
+
+// Gender = "M" ? console.log("Gender:Male" ): Gender ="F" ? console.log("Gender:Female"): console.log("Doğru daxil etməmisiniz");
+
+// 29.Ayın adını mətnlə konsola yazdıran bir program yazın. İstifadəçidən ayın nömrəsini soruşun və adını konsola çıxarın.
+
+// let Month=+prompt("Ayin nömrəsini daxil edin")
+// switch (Month) {
+//     case 1:
+//         console.log("Yanvar")
+//         break;
+//     case 2:
+//         console.log("Fevral")
+//         break;
+//     case 3:
+//         console.log("Mart")
+//         break;
+//     case 4:
+//         console.log("Aprel")
+//         break;
+//     case 5:
+//         console.log("May")
+//         break;
+//     case 6:
+//         console.log("Iyun")
+//         break;
+//     case 7:
+//         console.log("Iyul")
+//         break;
+//     case 8:
+//         console.log("Avqust")
+//         break;
+//     case value:
+//         console.log("Sentyabr")
+//         break;
+//     case 9:
+//         console.log("Oktyabr")
+//         break;
+//     case 10:
+//         console.log("Noyabr")
+//         break;
+//     case 11:
+//         console.log("Dekabr")
+//         break;
+
+
+//     default:
+//         console.log("Yaanlış daxil edilmişdir")
+
+
+// 30.İstifadəçi tərəfindən daxil edilmiş tarixin təsvirini çıxarın. İstifadəçidən tarixi «2009.12.19» formatında daxil etməyi xahiş edin. Tarixin təsvirini «19 Dekabr 2009-cu il» formatında çıxarın. Daxil edilmiş dəyərə validator əlavə edin. İstifadəçi səhv formatda dəyər daxil edərsə, «Yanlış dəyər daxil edilib» bildirişi göstərin.
+
+// let Date =prompt("Tarixi daxil edin (Bu formatda: 2009.12.19)")
+// let list3 = Date.split(".  ")
+// console.log(list3)
+
+
+// 34.Ədədin Müsbət, Mənfi və ya Sıfır Olduğunu Yoxla Verilmiş ədədin müsbət, mənfi və ya sıfır olduğunu müəyyən edin.
+
+// let Number= prompt("Bir ədəd daxil edin")
+// if (Number>0) {
+//     console.log("Ədəd müsbətdir");
+    
+// }else if(Number<0){
+// console.log("Ədəd mənfidir");
+
+// }else if(Number===0){
+//  console.log("Ədəd sıfıra bərabərdir");
+ 
+// }
+//  else {
+//     console.log("Ədəd düzgün daxil edilməyib");
+    
+// }
 
 
 
-18,20,23,25
+35.
+// Üç Ədəddən Ən Böyüyünü Tap
+let a2 = 5,  b2 = 8, c2 = 3;
+if (a2>=b2 && a2>=c2) {
+    console.log("Ən böyük ədəd a2-dır");
+    
+}else if(b2>=a2 && b2>=c2){
+console.log("Ən böyük ədəd b2-dır");
+}
+ else {
+    console.log("Ən böyük ədəd c2-dır");
+}
 
 
 
+// 36.
+// Cüt və ya Tək Ədəd
+// Verilmiş ədədin cüt və ya tək olduğunu ternary operatoru ilə müəyyən edin.
+
+// let Number4 = prompt("Bir ədəd daxil edin")
+
+// Number4 % 2 ===0 ? console.log("Ədəd cütdür") : console.log("Ədəd təkdir");
+
+37.
+// Kvadratın Sahəsi və Perimetri
+// Bir tərəfi a olan kvadrat üçün sahəni və perimetri tapın.
+
+// let trf = "a"
+
+// let Sahə = trf * trf
+// console.log(Sahə);
+
+
+
+// 38.Qiymətə Görə Nəticə (switch-case)
+// Qiymət verilir (0-100). Aşağıdakı qaydaya əsasən nəticəni switch-case ilə yazın:
+
+// 90-100: Əla
+// 75-89: Yaxşı
+// 60-74: Orta
+// 0-59: Zəif
+// Qeyd: switch(true) üsulu ilə istifadə edin.
+
+
+// let qiymet = prompt("Qiymeti daxil edin")
+// switch (true) {
+//     case (qiymet >= 90 && qiymet <= 100):
+//         console.log("Əladır");
+        
+//         break;
+//     case (qiymet >= 75 && qiymet <= 89):
+//         console.log("Yaxşıdır");
+        
+//         break;
+//     case (qiymet >= 60 && qiymet <= 74):
+//         console.log("Ortadır");
+        
+//         break;
+//     case (qiymet >= 0 && qiymet <= 59):
+//         console.log("Zəifdir");
+        
+//         break;
+
+//     default:
+//         console.log("Düzgün qiymet daxil edilməyib");
+        
+//         break;
+// }
+
+
+
+
+// 39.0-50 Arasında Təsadüfi Ədəd
+// 0 ilə 100 arasında Math.random() ilə təsadüfi ədəd yaradın və onun 0-50 arasında olub olmadığını yoxlayın.
+
+let eded = Math.floor(Math.random()*101)
+if (eded>=0 && eded<=50) {
+    console.log("Ədəd 0 la 50 arasinda yerlesir");
+    
+} else {
+    console.log("Ədəd 50-den böyüktür");
+    
+}
+
+
+
+// 40.Sadə Kalkulyator (switch-case)
+// İki ədəd və operator (+, -, *, /) verilib. switch-case ilə əməliyyatı icra edin. let a = 5, b = 3, op = "*";
+
+let a = 5, b = 3, op = "*" 
+let result;
+switch (op) {
+    case "+":
+       result= a+b
+        
+        break;
+    case "*":
+       result= a*b
+        
+        break;
+    case "-":
+       result= a-b
+        
+        break;
+    case "/":
+       result= a / b
+        
+        break;
+
+    default:
+        result = "Operator düzgün deyil"
+        break;
+}
+
+console.log(result);
+
+
+
+37  40
