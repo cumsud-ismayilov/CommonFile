@@ -94,7 +94,7 @@ let index="";
 for( let i = 0 ; i < txt.length ; i++ ){
        if(txt[i] === "."){
           index = i
-          
+          break; 
        }
         
 }
@@ -125,4 +125,54 @@ console.log(index);
 
 
 
+// fibanocci ədədləri
+// 0; 1; 1; 2; 3; 5; 8; 13; 21; 34; 55; 89...
 
+
+let d = 0;
+let e = 1;
+
+while (d <= 100) {
+    console.log(d);
+    let next = d + e;
+    d = e;
+    e = next;
+}
+
+
+
+// 6.Sadə ədədləri çıxaran proqram yazın.
+// İstifadəçidən n ədədini soruşan və n-dən 0-a kimi bütün sadə ədədləri azalan ardıcıllıqla çıxaran proqram yazın.
+// «23» ədədi daxil edildikdə, konsola «23», «19», «17», «13», «11», «7», «5», «3», «2», «1» ardıcıllığı çıxarılmalıdır.
+
+
+// let n = 75
+// while (n>1) {
+//   let j = n
+//   let cnt = 0
+//   while (j>0) {
+//     if(!(n % j)){
+//         cnt++;
+//     }
+//     j--
+//   }
+//   if(cnt==2){
+//     console.log(n);
+    
+//   }
+//   n--
+// }
+
+for (let n = 75; n > 1; n--) {
+  let cnt = 0;
+
+  for (let j = n; j > 0; j--) {
+    if (n % j === 0) {
+      cnt++;
+    }
+  }
+
+  if (cnt === 2) {
+    console.log(n);
+  }
+}
