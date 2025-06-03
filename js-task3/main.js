@@ -145,31 +145,99 @@ function capitalWords(text) {
 
 console.log(capitalWords("Hello my name is Harry"));
 
+
 // 9.Bir ədədi parametr kimi qəbul edən və cüt olduqda true,
 // tək olduqda isə false qaytaran isEven() funksiyasını yazın.
 
 
-function isEven(number) {
-    if (number % 2 ===0) {
+function isEven(numb) {
+    if (numb % 2 === 0) {
         return true
     } else {
         return false
     }
 }
-console.log(isEven(30));
+
+console.log(isEven(40));
 
 // 10.Telefon nömrəsini parametr kimi qəbul edən ısvalidnumber() funksiyasını yazın.
 // Telefon nömrəsi 11 rəqəmdən ibarət olduqda və +7 ilə başladıqda, funksiya true qaytarır.
 // +7123456789
 
-// function isvalidnumber(telnumber) {
-//    const str =telnumber.toString()
-//     const onlyNumber = str.slice(2);  
-//    return onlyNumber.length ===9 && str.startsWith("+7")
-// }
+function isvalidnumber(telnumber) {
+    const onlyNumber = telnumber.slice(1);  
+   if (onlyNumber.length ===11 && telnumber.startsWith("+7")) {
+    return true
+   } else {
+    return "Yanlış daxil edilmişdir"
+   }
+}
 
 
-// console.log(isvalidnumber("+712345678"));
+console.log(isvalidnumber("+7123456789"));
+
+
+
+
+
+
+// 12.Verilmiş ədədin sadə olub-olmadığını yoxlayan `isPrime()` funksiyasını yazın.
+// Məsələn, `isPrime(7)` çağırıldıqda `true`, `isPrime(8)` çağırıldıqda `false` qaytarmalıdır.
+
+function isPrime(Number) {
+    let j = Number
+    let cnt = 0
+    while (j > 0) {
+        if (Number % j === 0) {
+            cnt++
+           
+            
+        }
+        j--
+    }
+    if (cnt === 2) {
+        return true
+    } else {
+        return false
+    }
+}
+
+console.log(isPrime(7));
+
+// 13.Verilmiş ədədin rəqəmlərinin cəmini qaytaran `sumOfDigits()` funksiyasını yazın.
+// Məsələn, `sumOfDigits(1234)` çağırıldıqda `10` qaytarmalıdır (1 + 2 + 3 + 4 = 10).
+
+function sumOfDigits(digits) {
+    let str = digits.toString().split("")
+   let sum =Number(str[0]) + Number(str[1]) + Number(str[2]) + Number(str[3])
+     return sum
+    
+}
+
+
+console.log(sumOfDigits(1234));
+
+
+// 14.Verilmiş mətnin palindrom olub-olmadığını yoxlayan `isPalindrome()` funksiyasını yazın.
+// Məsələn, `isPalindrome("level")` çağırıldıqda `true`, `isPalindrome("hello")` çağırıldıqda `false` qaytarmalıdır.
+
+
+
+function isPalindrome(text) {
+    let reversText = text.split("").reverse("").join("")
+    
+    if (reversText === text) {
+        return true
+    } else {
+        return false
+    }
+    
+}
+console.log(isPalindrome("level"));
+console.log(isPalindrome("hello"));
+
+
+
 
 
 // 15.Verilmiş cümlədəki ən uzun sözü qaytaran `longestWord()` funksiyasını yazın.
@@ -188,6 +256,24 @@ function longestWord(text) {
 }
 
 console.log(longestWord("Javascript is a powerful language"));
+
+
+// 16.Daxil edilən iki tarix arasındakı günlərin sayını qaytaran `daysBetweenDates()` funksiyasını yazın.
+// Məsələn, `daysBetweenDates("2025-04-01", "2025-04-10")` çağırıldıqda `9` qaytarmalıdır.
+
+
+function daysBetweenDates(date1,date2) {
+    const d1 = new Date(date1);
+    const d2 = new Date(date2);
+    const diffTime = Math.abs(d1 -d2)
+   
+    const Days =diffTime / (1000 * 60 * 60 *24)
+    
+    return Days;
+    
+}
+
+console.log(daysBetweenDates("2025-04-01", "2025-04-10"));
 
 
 
@@ -246,4 +332,12 @@ function factorial(number) {
 }
 
 console.log(factorial(5));
+
+
+4,11,17
+
+
+
+
+
 
