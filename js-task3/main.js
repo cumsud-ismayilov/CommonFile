@@ -321,8 +321,7 @@ console.log(charCodes("ABC"));
 // 21.Verilmiş ədədin faktorialını qaytaran bir `factorial()` funksiyası yazın.
 // Məsələn, `factorial(5)` çağırıldıqda `120` qaytarmalıdır.
 
-function factorial(number) {
-    if(number < 0) return undefined
+function factorial(number) { 
     let result = 1
     for (let i = 2; i <= number; i++) {
         
