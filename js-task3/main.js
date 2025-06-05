@@ -359,7 +359,7 @@ console.log(daysBetweenDates("2025-04-01", "2025-04-10"));
 
 
 
-// 18.Verilmiş stringi tərsinə çevirən `reverseArray()` funksiyasını yazın.
+// 17.Verilmiş stringi tərsinə çevirən `reverseArray()` funksiyasını yazın.
 // Məsələn, `reverseArray("1, 2, 3, 4, 5")` çağırıldıqda `"5, 4, 3, 2, 1"` qaytarmalıdır.
 
 function reverseArray(numbers) {
@@ -372,7 +372,7 @@ function reverseArray(numbers) {
 console.log(reverseArray("1, 2, 3, 4, 5"));
 
 
-// 19.İstifadəçi adı və yaş parametr kimi qəbul edən və `"[Ad] is [Yaş] years old"` mesajını qaytaran `userInfo()` funksiyasını yazın.
+// 18.İstifadəçi adı və yaş parametr kimi qəbul edən və `"[Ad] is [Yaş] years old"` mesajını qaytaran `userInfo()` funksiyasını yazın.
 // Məsələn, `userInfo("Murad", 25)` çağırıldıqda `"Murad is 25 years old"` qaytarmalıdır.
 
 function userInfo(Name,years) {
@@ -381,7 +381,7 @@ function userInfo(Name,years) {
 }
 userInfo("Cümşüd",21)
 
-// 20.Daxil edilən mətnin hər bir simvolunun ASCII dəyərini qaytaran `charCodes()` funksiyasını yazın.
+// 19.Daxil edilən mətnin hər bir simvolunun ASCII dəyərini qaytaran `charCodes()` funksiyasını yazın.
 // Məsələn, `charCodes("ABC")` çağırıldıqda '65, 66, 67' qaytarmalıdır.
 
 function charCodes(letters) {
@@ -400,7 +400,7 @@ console.log(charCodes("ABC"));
 
 
 
-// 21.Verilmiş ədədin faktorialını qaytaran bir `factorial()` funksiyası yazın.
+// 20.Verilmiş ədədin faktorialını qaytaran bir `factorial()` funksiyası yazın.
 // Məsələn, `factorial(5)` çağırıldıqda `120` qaytarmalıdır.
 
 function factorial(number) { 
@@ -415,7 +415,7 @@ function factorial(number) {
 console.log(factorial(5));
 
 
-4,17
+
 
 
 
