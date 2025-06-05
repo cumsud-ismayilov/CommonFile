@@ -49,6 +49,74 @@ function getBook(rubl,dollar) {
 getBook(1200,20)
 
 
+
+// 4.İstifadəçidən 1 ilə 99 arasında rəqəm daxil etməsini tələb edən və
+// onu mətn şəklində konsola çıxaran numberToText funksiyası tərtib edin.
+// Birdən ona qədər rəqəmin daxil edilməsi zamanı  bir söz göstərilir.(bir ,iki, üç və.s)
+// Hər hansı digər iki rəqəmli rəqəmi daxil edilməsi zamanı, boşluqla ayrılmış iki söz göstərilir,
+// məsələn, "iyirmi bir".
+
+
+function numberToText(num) {
+    if (num.length === 1) {
+        return singleDigjit(num)
+    }else if(num.length === 2 && num[1]=== "0"){
+        return doubleDigjit(num[0]) 
+    }else if(num.length === 2 && num[1] !== "0"){
+        return doubleDigjit(num[0]) + " " + singleDigjit(num[1])
+}
+}
+
+console.log(numberToText("84"));
+
+
+function singleDigjit(num) {
+    switch (num) {
+        case "1":
+            return "bir";
+        case "2":
+            return "iki";
+        case "3":
+            return "üç";
+        case "4":
+            return "dörd";
+        case "5":
+            return "beş";
+        case "6":
+            return "altı";
+        case "7":
+            return "yeddi";
+        case "8":
+            return "səkkiz";
+        case "9":
+            return "doqquz";
+    }
+}
+
+function doubleDigjit(num) {
+    switch (num) {
+        case "1":
+            return "on";
+        case "2":
+            return "iyirmi";
+        case "3":
+            return "otuz";
+        case "4":
+            return "qırx";
+        case "5":
+            return "əlli";
+        case "6":
+            return "altmış";
+        case "7":
+            return "yetmiş";
+        case "8":
+            return "səksən";
+        case "9":
+            return "doxsan";
+    }
+}
+
+
 // 5.Parametr kimi iki ədəd qəbul edən və onlardan ən kiçiyini qaytaran min() funksiyası tərtib edin.
 
 function enterNumber(a,b) {
@@ -175,6 +243,20 @@ function isvalidnumber(telnumber) {
 
 
 console.log(isvalidnumber("+7123456789"));
+
+
+// 11.Mətni parametr kimi qəbul edən və bu mətndəki hərflərin sayını qaytaran numCounter funksiyasını yazın.
+// "15263538479359486()-="';:!@#$%^&*()"
+// REGEX()
+
+
+function numCounter(text) {
+    let result =text.match(/[a-zA-Z]+/g).join("")
+    console.log(result.length);
+    
+}
+
+numCounter("hello world12345?.,!@#$%^&*()")
 
 
 
@@ -333,8 +415,7 @@ function factorial(number) {
 console.log(factorial(5));
 
 
-4,11,17
-
+4,17
 
 
 
