@@ -135,28 +135,3 @@ console.log(calculator.readMemory());
 console.log(calculator.clearMemory());
 
 
-// 6.Verilmiş stringdə ən çox təkrarlanan elementi qaytaran `mostFrequent()` funksiyasını yazın.
-// Məsələn, `mostFrequent("1, 3, 2, 3, 4, 3, 5, 3")` çağırıldıqda `3` qaytarmalıdır.
-
-function mostFrequent(str) {
-  const elements = str.split(", ").map(Number);
-  const frequency = {};
-  
-  elements.forEach(num => {
-    frequency[num] = (frequency[num] || 0) + 1;
-  });
-  
-  let maxCount = 0;
-  let mostFrequentElement = null;
-  
-  for (const num in frequency) {
-    if (frequency[num] > maxCount) {
-      maxCount = frequency[num];
-      mostFrequentElement = Number(num);
-    }
-  }
-  
-  return mostFrequentElement;
-} 
-
-console.log(mostFrequent("1, 3, 2, 3, 4, 3, 5, 3")); 
