@@ -13,7 +13,7 @@ const list =document.createElement("li")
 list.innerText= "TITAN RTX"
 UL.append(list)
 
-console.log(head.remove);
+console.log(head.remove());
 
 // 3.HTML-kod verilmişdir. Yalnız JS-kodundan istifadə edərək dəyişklik edin:
 // - başlıq mətnini «GeForce 20 Series» -a;
@@ -24,7 +24,7 @@ head.innerText = "GeForce 20 Series"
 const tagLi = document.querySelectorAll(".primary")
 console.log(tagLi);
 tagLi.forEach(item => {
-  item.style.color = "#ebebeb";
+  item.style.background = "#ebebeb";
   console.log(item);
   
 });
@@ -43,6 +43,6 @@ AllLi.forEach(el =>{
       console.log(el);
 })
 
-
+  
 
 
